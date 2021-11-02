@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On tap VHKD</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="privew">
+        <div class="questionsBox">
+            <div class="questions">
+                <p id="q">Q: </p>
+            </div>
+            <div class="point">
+                <span id="pointSpan">Correct: 0/0</span>
+            </div>
+            <div class="funkyradio" name="answers">
+                <div class="funkyradio-default">
+                    <input type="radio" name="radio" id="a1" />
+                    <label for="a1">A: </label>
+                </div>
+
+                <div class="funkyradio-default">
+                    <input type="radio" name="radio" id="a2" />
+                    <label for="a2">B: </label>
+                </div>
+
+                <div class="funkyradio-default">
+                    <input type="radio" name="radio" id="a3" />
+                    <label for="a3">C: </label>
+                </div>
+
+                <div class="funkyradio-default">
+                    <input type="radio" name="radio" id="a4" />
+                    <label for="a4">D: </label>
+                </div>
+
+            </div>
+            <div class="questionsRow">
+                <button class="btn btn-success" id="submitButton">Submit</button>
+                <button class="btn btn-warning" id="nextButton">Next</button>
+                <span id="levelSpan"></span>
+            </div>
+            <div>
+                <p class="answerSolve" id="answerChecker"></p>
+            </div>
+        </div>
+
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/quizz.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
