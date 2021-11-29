@@ -11,47 +11,51 @@
 </head>
 
 <body>
-
-    <div class="privew">
-        <div class="questionsBox">
-            <div class="questions">
-                <p id="q">Q: </p>
-            </div>
-            <div class="point">
-                <span id="pointSpan">Correct: 0/0</span>
-            </div>
-            <div class="funkyradio" name="answers">
-                <div class="funkyradio-default">
-                    <input type="radio" name="radio" id="a1" />
-                    <label for="a1">A: </label>
+    <div class="container">
+        <div class="header mt-4 mb-4 text-center">
+            <h3>Ôn tập văn hóa kinh doanh</h3>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="preview">
+                    <div class="questionsBox">
+                        <div class="questions">
+                            <p id="q">Q: </p>
+                        </div>
+                        <div class="point">
+                            <span id="pointSpan" class="quizz-result">Kết quả: 0/0</span>
+                        </div>
+                        <div class="funkyradio" name="answers">
+                            <div class="funkyradio-default">
+                                <input type="radio" name="radio" id="a1" />
+                                <label for="a1">A: </label>
+                            </div>
+                            <div class="funkyradio-default">
+                                <input type="radio" name="radio" id="a2" />
+                                <label for="a2">B: </label>
+                            </div>
+                            <div class="funkyradio-default">
+                                <input type="radio" name="radio" id="a3" />
+                                <label for="a3">C: </label>
+                            </div>
+                            <div class="funkyradio-default">
+                                <input type="radio" name="radio" id="a4" />
+                                <label for="a4">D: </label>
+                            </div>
+                        </div>
+                        <div class="questionsRow">
+                            <button class="btn btn-success" id="submitButton">Chọn</button>
+                            <button class="btn btn-warning" id="nextButton">Câu tiếp</button>
+                            <span id="levelSpan"></span>
+                        </div>
+                        <div>
+                            <p class="answerSolve" id="answerChecker"></p>
+                            <span class="answerSolve" id="answerResult"></span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="funkyradio-default">
-                    <input type="radio" name="radio" id="a2" />
-                    <label for="a2">B: </label>
-                </div>
-
-                <div class="funkyradio-default">
-                    <input type="radio" name="radio" id="a3" />
-                    <label for="a3">C: </label>
-                </div>
-
-                <div class="funkyradio-default">
-                    <input type="radio" name="radio" id="a4" />
-                    <label for="a4">D: </label>
-                </div>
-
-            </div>
-            <div class="questionsRow">
-                <button class="btn btn-success" id="submitButton">Submit</button>
-                <button class="btn btn-warning" id="nextButton">Next</button>
-                <span id="levelSpan"></span>
-            </div>
-            <div>
-                <p class="answerSolve" id="answerChecker"></p>
             </div>
         </div>
-
         <script src="./js/jquery-3.6.0.min.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/quizz.js"></script>
